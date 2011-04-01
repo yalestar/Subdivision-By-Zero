@@ -1,29 +1,9 @@
-<h1>Listing subdivisions</h1>
-
-<table>
-  <tr>
-    <th>First</th>
-    <th>Second</th>
-    <th>Third</th>
-    <th>Image path</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @subdivisions.each do |subdivision| %>
-  <tr>
-    <td><%= subdivision.first %></td>
-    <td><%= subdivision.second %></td>
-    <td><%= subdivision.third %></td>
-    <td><%= subdivision.image_path %></td>
-    <td><%= link_to 'Show', subdivision %></td>
-    <td><%= link_to 'Edit', edit_subdivision_path(subdivision) %></td>
-    <td><%= link_to 'Destroy', subdivision, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table width=70% border="0" cellspacing="1" cellpadding="1" align ="center">
+<tbody>
+<tr>
+	<td align = "center"><img src ="/subd/head.gif">&nbsp;&nbsp;&nbsp;&nbsp;<img src ="/subd/subd3.jpg">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<img src = "/subd/subd8.jpg">
+	</td>
+	<tr>
+<td>
 </table>
-
-<br />
-
-<%= link_to 'New Subdivision', new_subdivision_path %>
