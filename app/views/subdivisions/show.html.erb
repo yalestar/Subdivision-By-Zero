@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First:</b>
+  <%= @subdivision.first %>
+</p>
+
+<p>
+  <b>Second:</b>
+  <%= @subdivision.second %>
+</p>
+
+<p>
+  <b>Third:</b>
+  <%= @subdivision.third %>
+</p>
+
+<p>
+  <b>Image path:</b>
+  <%= @subdivision.image_path %>
+</p>
+
+
+<%= link_to 'Edit', edit_subdivision_path(@subdivision) %> |
+<%= link_to 'Back', subdivisions_path %>
