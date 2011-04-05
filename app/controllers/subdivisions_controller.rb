@@ -1,12 +1,10 @@
 class SubdivisionsController < ApplicationController
   # GET /subdivisions
-  # GET /subdivisions.xml
   def index
-    @subdivisions = Subdivision.all
+    @sd = Subdivision.random
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @subdivisions }
     end
   end
 

@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(:version => 20110401152920) do
 
   create_table "subdivisions", :force => true do |t|
-    t.string   "first"
-    t.string   "second"
-    t.string   "third"
+    t.string   "first_part"
+    t.string   "second_part"
+    t.string   "third_part"
     t.string   "image_path"
     t.datetime "created_at"
     t.datetime "updated_at"
