@@ -1,15 +1,13 @@
 class SubdivisionsController < ApplicationController
   # GET /subdivisions
   def index
-    @sd = Subdivision.random
-
+    @sd = Subdivision.new
+    
     respond_to do |format|
       format.html # index.html.erb
     end
   end
 
-  # GET /subdivisions/1
-  # GET /subdivisions/1.xml
   def show
     @subdivision = Subdivision.find(params[:id])
 
@@ -19,8 +17,7 @@ class SubdivisionsController < ApplicationController
     end
   end
 
-  # GET /subdivisions/new
-  # GET /subdivisions/new.xml
+
   def new
     @subdivision = Subdivision.new
 
@@ -30,13 +27,11 @@ class SubdivisionsController < ApplicationController
     end
   end
 
-  # GET /subdivisions/1/edit
   def edit
     @subdivision = Subdivision.find(params[:id])
   end
 
-  # POST /subdivisions
-  # POST /subdivisions.xml
+
   def create
     @subdivision = Subdivision.new(params[:subdivision])
 

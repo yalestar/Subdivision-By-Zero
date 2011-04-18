@@ -1,10 +1,6 @@
-<table width=70% border="0" cellspacing="1" cellpadding="1" align ="center">
-<tbody>
-<tr>
-	<td align="center">
-		 <%= image_tag "head.gif" %>
-		<%= @subdivision.first_part %>
-	</td>
-	<tr>
-<td>
-</table>
+</h2><b>Subdivision Name Generator</b></h2>
+<hr />
+<%= image_tag(@sd.house_image) %>
+<br />
+
+<%= @sd.first_part %> <%= @sd.second_part %> <%= @sd.third_part unless @sd.third_part.nil? %>
